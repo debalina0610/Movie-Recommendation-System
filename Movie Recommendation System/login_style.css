@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: sen;
+}
+
+/* For Section class HOME*/
+.home{     
+    background-color: black;
+    padding-left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(poster.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+/*For div CONTENT in HOME section*/
+.home .content{
+    max-width: 520px;
+    color: white;
+}
+
+/*Heading content*/
+.content h2{
+    font-size: 40px;
+    letter-spacing: 0.1cm;
+    margin: -0px 0 50px 40px;
+}
+
+/*Get Started content*/
+.content a{
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    margin-left: 40px;
+}
+
+/*Login portion in home section*/
+.home .login{
+    position: relative;
+    width: 600px;
+}
+
+/* Member Login Header */
+.login h2{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin: 40px 0 40px 380px;
+}
+
+/*Input Box for Email and Password*/
+.login .input_box{
+    position: relative;
+    width: 85%;
+    height: 50px;
+    margin: 50px 0 40px 240px;
+}
+
+/*Text iside the input box*/
+.input_box input{
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 50px;
+    font-size: 15px;
+    color: white;
+    padding: 0 20px 0 42px;
+}
+
+/*Label Text inside the input box*/
+.input_box label{
+    position: absolute;
+    top: 50%;
+    left: 42px;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: white;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input_box input:focus~label,
+.input_box input:valid~label{
+    font-size: 12px;
+    top: -14px;
+    left: 42px;
+}
+
+/*Mail and Password icon*/
+.input_box .icon{
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    top: 18px;
+    left: 18px;
+}
+
+/*div Remeber Forget*/
+.login .remember_forget{
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    margin: -10px 0 0 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember_forget a{
+    color: white;
+    padding-left: 80px;
+    text-decoration: none;
+}
+
+.remember_forget a:hover{
+    text-decoration: underline;
+}
+
+/*Login Button*/
+.login .btn{
+    width: 85%;
+    height: 50px;
+    margin: 20px 250px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background: linear-gradient(80deg, black, #2a4b71);
+    box-shadow: 0 8px 10px rbga(0,0,0,.5);
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.login .btn:hover{
+    background: linear-gradient(-80deg, black, #2a4b71);
+}
+
+/*Register link for creating account*/
+.login .register_link{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    margin: 10px 0 0 350px;
+}
+
+.register_link p a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register_link a:hover{
+    text-decoration: underline;
+}
